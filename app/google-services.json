@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "425810672764",
+    "firebase_url": "https://android2-comics-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "android2-comics",
+    "storage_bucket": "android2-comics.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425810672764:android:8f9114037e42d84d979df9",
+        "android_client_info": {
+          "package_name": "com.example.Project_android_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425810672764-ak5da0qrbjc6rjn065flr6u263s6b63g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.Project_android_2",
+            "certificate_hash": "513c786d010bac838ae8fd6f1394b2dacd645e43"
+          }
+        },
+        {
+          "client_id": "425810672764-2d57tagefmncd8tfku0tut637ferrn08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUG75gDuzJshPyaqSHPQrdbeuYvj7lnjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425810672764-2d57tagefmncd8tfku0tut637ferrn08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

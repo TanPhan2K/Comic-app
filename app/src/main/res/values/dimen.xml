@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="layout_width_logo">130dp</dimen>
+    <dimen name="layout_height_logo">100dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_358dp">358dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_326dp">326dp</dimen>
+    <dimen name="_19dp">19dp</dimen>
+    <dimen name="_38dp">38dp</dimen>
+
+    <dimen name="min_text_size">12sp</dimen>
+    <dimen name="max_text_size">24sp</dimen>
+</resources>
+

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Solo Leveling</string>
+
+    <string name="client_id">244012587265-6lenqp2hd0dualkhheo66huth1p13q9v.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">795775572607729</string>
+    <string name="fb_login_protocol_scheme">fb795775572607729</string>
+    <string name="facebook_client_token">56789</string>
+
+    <style name="MyTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <string name="title_activity_edit_language">EditLanguage</string>
+</resources>

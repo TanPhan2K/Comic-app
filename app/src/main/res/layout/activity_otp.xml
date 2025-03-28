@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlLoayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_32dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/angle_left_solid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_above="@+id/line"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@color/color_edit"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/back"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/divider_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLoayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlLoayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+
+        <ImageView
+            android:id="@+id/id_imglogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/button_with_circle_envelope_solid" />
+
+        <TextView
+            android:id="@+id/id_textvbig"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38dp"
+            android:layout_below="@id/id_imglogo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_19dp"
+            android:text="Xác Minh Bảo Mật"
+            android:textAlignment="center"
+            android:textColor="@color/color_edit"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_textv"
+            android:layout_width="@dimen/_326dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/id_textvbig"
+            android:layout_centerInParent="true"
+            android:text="Vui lòng nhập mã xác nhận Email để xác minh danh tính."
+            android:textAlignment="center"
+            android:textColor="@color/color_edit"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textv_email_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/id_textv"
+            android:layout_centerInParent="true"
+            android:text="Địa chỉ Email"
+            android:textAlignment="center"
+            android:textColor="@color/color_edit"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linerarlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:layout_below="@id/rlLoayout_1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/otpEt1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/otpEt2"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/otpEt3"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/otpEt4"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/otpEt5"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/otpEt6"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:background="@drawable/edittext_background_rounded"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linerarlayout_2"
+        android:layout_below="@id/linerarlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/rensendcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gửi lại mã"
+            android:textColor="@color/color_background"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>

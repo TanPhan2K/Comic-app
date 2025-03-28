@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#DC5555" /> <!-- Màu nền của EditText -->
+    <corners android:radius="22dp" /> <!-- Điều chỉnh bán kính để tạo góc cong -->
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/circle_background_93d6f6"
+        android:gravity="center" />
+    <item android:drawable="@drawable/envelope_solid"
+        android:width="25dp"
+        android:height="25dp"
+        android:gravity="center"/> <!-- Thay thế your_image bằng tên tài nguyên hình ảnh của bạn -->
+</layer-list>

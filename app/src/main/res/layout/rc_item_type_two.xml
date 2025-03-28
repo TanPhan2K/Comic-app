@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="15dp"
+        android:rowCount="2">
+
+        <ImageView
+            android:id="@+id/img_comic_two"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_item_chapter"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txt_name_comic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Tên truyện"
+            android:textColor="#0C0C0C" />
+
+        <TextView
+            android:id="@+id/txt_name_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_marginLeft="10dp"
+            android:text="Tác giả"
+            android:textColor="#0C0C0C" />
+    </GridLayout>
+</androidx.cardview.widget.CardView>

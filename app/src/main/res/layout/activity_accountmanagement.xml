@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:enabled="false">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/exit"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_32dp"
+            android:src="@drawable/xmark_solid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/id_imglogo"
+            android:layout_width="@dimen/layout_width_logo"
+            android:layout_height="@dimen/layout_height_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:id="@+id/id_textv"
+            android:layout_width="@dimen/_326dp"
+            android:layout_height="@dimen/_38dp"
+            android:layout_below="@id/id_imglogo"
+            android:layout_centerInParent="true"
+            android:text="Đăng Nhập/Tạo Tài Khoản"
+            android:textAlignment="center"
+            android:textColor="#614385"
+            android:textSize="@dimen/_25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/butonsignin"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/id_textv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_19dp"
+            android:backgroundTint="@drawable/button_background_tint"
+            android:drawableLeft="@drawable/button_with_circle_envelope_solid"
+            android:text="Đăng nhập bằng Email"
+            android:paddingStart="15dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_edit" />
+
+        <Button
+            android:id="@+id/buttongoogle"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/butonsignin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_19dp"
+            android:backgroundTint="@drawable/button_background_tint"
+            android:drawableLeft="@drawable/button_with_circle_logo_google"
+            android:text="Đăng nhập bằng Google"
+            android:paddingStart="15dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_edit" />
+
+        <Button
+            android:id="@+id/buttonfacebook"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/buttongoogle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_19dp"
+            android:backgroundTint="@drawable/button_background_tint"
+            android:drawableLeft="@drawable/button_with_circle_logo_facebook"
+            android:text="Đăng nhập bằng Facebook"
+            android:paddingStart="15dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_edit" />
+
+        <Button
+            android:id="@+id/buttontwitter"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/buttonfacebook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_19dp"
+            android:backgroundTint="@drawable/button_background_tint"
+            android:drawableLeft="@drawable/button_with_circle_logo_twitter"
+            android:text="Đăng nhập bằng Tiwtter"
+            android:paddingStart="15dp"
+
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_edit" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_dark_gray"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/light_grayish_blue" />
+    </FrameLayout>
+</RelativeLayout>

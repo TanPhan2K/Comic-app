@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item1"
+        android:drawable="@drawable/circle_border_614385"
+        android:gravity="center" /> <!-- Sử dụng màu đỏ cho item1 từ colors.xml -->
+    <item
+        android:id="@+id/item2"
+        android:width="5dp"
+        android:height="5dp"
+        android:drawable="@drawable/check_solid"
+        android:gravity="center"
+        android:alpha="@color/white"
+
+        />
+</layer-list>

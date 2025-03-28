@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_background">#A88BEB</color>
+    <color name="color_edit">#614385</color>
+    <color name="night_mode">#6124B1</color>
+    <color name="notification">#13B2C3</color>
+    <color name="private_account">#E6A326</color>
+    <color name="lavender">#8692f7</color>
+    <color name="security">#D95F69</color>
+    <color name="light_gray">#EFEFEF</color>
+    <color name="cloud">#CCCCCC</color>
+    <color name="translucent_dark_gray">#99000000</color>
+    <color name="light_grayish_blue">#D8D9E1</color>
+    <color name="gray">#EAEAEA</color>
+</resources>

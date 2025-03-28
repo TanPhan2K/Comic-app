@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item1"
+        android:drawable="@drawable/circle_border_41000000"
+        android:gravity="center" />
+    <item
+        android:id="@+id/item2"
+        android:width="5dp"
+        android:height="5dp"
+        android:drawable="@drawable/check_solid"
+        android:gravity="center" /> <!-- Thay thế your_image bằng tên tài nguyên hình ảnh của bạn -->
+</layer-list>

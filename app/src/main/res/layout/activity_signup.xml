@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_32dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/angle_left_solid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_above="@+id/line"
+            android:layout_centerInParent="true"
+            android:text="Đăng ký"
+            android:textAlignment="center"
+            android:textColor="@color/color_edit"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/back"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/divider_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlLayout"
+        android:layout_margin="20dp">
+        <ImageView
+            android:id="@+id/id_imglogo"
+            android:layout_width="@dimen/layout_width_logo"
+            android:layout_height="@dimen/layout_height_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/id_textv"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/id_imglogo"
+            android:layout_centerInParent="true"
+            android:text="Tạo Tài Khoản"
+            android:textAlignment="center"
+            android:textColor="@color/color_edit"
+            android:textSize="@dimen/_25dp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/layoutImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_textv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_background_d9d9d9"
+                android:scaleType="centerCrop"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/textAdImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Chọn một hình ảnh"
+                android:textColor="#878998"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/exemail"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/layoutImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:hint="Nhập email"
+            android:textColor="@color/color_edit"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="30dp"
+            android:paddingEnd="50dp"/>
+
+        <EditText
+            android:id="@+id/exusername"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/exemail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:hint="Nhập tên tài khoản"
+            android:textColor="@color/color_edit"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="30dp"
+            android:paddingEnd="50dp"/>
+
+        <EditText
+            android:id="@+id/expassword"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/exusername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:hint="Nhập mật khẩu"
+            android:textColor="@color/color_edit"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="30dp"
+            android:paddingEnd="70dp"/>
+
+        <EditText
+            android:id="@+id/exConfirmpassword"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/expassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/edittext_background_rounded"
+            android:hint="Nhập lại mật khẩu"
+            android:textColor="@color/color_edit"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="30dp"
+            android:paddingEnd="70dp"/>
+
+        <Button
+            android:id="@+id/buttonsignup"
+            android:layout_width="@dimen/_358dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_below="@+id/exConfirmpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:alpha="0.5"
+            android:backgroundTint="@color/color_edit"
+            android:enabled="false"
+            android:text="Tiếp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/clearTextView_email"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/exemail"
+            android:layout_alignEnd="@id/exemail"
+            android:layout_alignRight="@id/exemail"
+            android:layout_alignBottom="@id/exemail"
+            android:layout_marginEnd="10dp"
+            android:drawableRight="@drawable/bacground_remove_d9d9d9" />
+        <TextView
+            android:id="@+id/clearTextView_User"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/exusername"
+            android:layout_alignEnd="@id/exusername"
+            android:layout_alignRight="@id/exusername"
+            android:layout_alignBottom="@id/exusername"
+            android:layout_marginEnd="10dp"
+            android:drawableRight="@drawable/bacground_remove_d9d9d9" />
+        <TextView
+            android:id="@+id/clearTextView_pass"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/expassword"
+            android:layout_alignEnd="@id/expassword"
+            android:layout_alignRight="@id/expassword"
+            android:layout_alignBottom="@id/expassword"
+            android:layout_marginEnd="40dp"
+            android:drawableRight="@drawable/bacground_remove_d9d9d9" />
+        <TextView
+            android:id="@+id/clearTextView_cpass"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/exConfirmpassword"
+            android:layout_alignEnd="@id/exConfirmpassword"
+            android:layout_alignRight="@id/exConfirmpassword"
+            android:layout_alignBottom="@id/exConfirmpassword"
+            android:layout_marginEnd="40dp"
+            android:drawableRight="@drawable/bacground_remove_d9d9d9" />
+        <TextView
+            android:id="@+id/eyeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/expassword"
+            android:layout_alignEnd="@id/expassword"
+            android:layout_alignRight="@id/expassword"
+            android:layout_alignBottom="@id/expassword"
+            android:layout_marginEnd="10dp"
+            android:drawableRight="@drawable/eye_slash_regular" />
+        <TextView
+            android:id="@+id/eyeTextView_cpasss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/exConfirmpassword"
+            android:layout_alignEnd="@id/exConfirmpassword"
+            android:layout_alignRight="@id/exConfirmpassword"
+            android:layout_alignBottom="@id/exConfirmpassword"
+            android:layout_marginEnd="10dp"
+            android:drawableRight="@drawable/eye_slash_regular" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_dark_gray"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/light_grayish_blue" />
+    </FrameLayout>
+
+
+</RelativeLayout>
