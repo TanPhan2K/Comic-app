@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -93,6 +94,7 @@ public class AccountManagement extends AppCompatActivity {
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.client_id))
                 .requestEmail()
+                .requestProfile()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         boolean logoutRequested = getIntent().getBooleanExtra("logout", false);
@@ -109,6 +111,7 @@ public class AccountManagement extends AppCompatActivity {
         }
         SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
         boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);
+        Log.d("isLoggedIn", String.valueOf(isLoggedIn));
 
         if (isLoggedIn) {
             String userUid = sharedPreferences.getString("user_uid", "");
@@ -169,6 +172,7 @@ public class AccountManagement extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+//                        Log.e("FB", "Authentication failed: " + task.getException().getMessage());
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateUI(user);
@@ -201,6 +205,7 @@ public class AccountManagement extends AppCompatActivity {
             @Override
             public void onError(FacebookException exception) {
                 // Xử lý khi có lỗi xảy ra
+                Log.e("FB_LOGIN_ERROR", "Lỗi đăng nhập Facebook", exception);
                 Toast.makeText(AccountManagement.this, "Đăng nhập không thành công.", Toast.LENGTH_SHORT).show();
                 updateUI(null);
                 mGoogleSignInClient.signOut();
@@ -334,8 +339,21 @@ public class AccountManagement extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) {
         if (user != null) {
+//            Intent intent = new Intent(AccountManagement.this, Home.class);
+//            saveUserInfoToSharedPreferences(user.getEmail(), user.getDisplayName(), user.getPhotoUrl().toString()) ;
+//            startActivity(intent);
+//            finish();
+            Log.d("FirebaseUser", "Email: " + user.getEmail());
+            Log.d("FirebaseUser", "Display Name: " + user.getDisplayName());
+            Log.d("FirebaseUser", "Photo URL: " + (user.getPhotoUrl() != null ? user.getPhotoUrl().toString() : "No photo"));
+
+            String email = user.getEmail();
+            String displayName = user.getDisplayName();
+            String photoUrl = (user.getPhotoUrl() != null) ? user.getPhotoUrl().toString() : "https://fpytgnoybnnnhflnybhp.supabase.co/storage/v1/object/public/media-storage/USER/Default-avatar.png";
+
+            saveUserInfoToSharedPreferences(email, displayName, photoUrl);
+
             Intent intent = new Intent(AccountManagement.this, Home.class);
-            saveUserInfoToSharedPreferences(user.getEmail(), user.getDisplayName(), user.getPhotoUrl().toString()) ;
             startActivity(intent);
             finish();
         }

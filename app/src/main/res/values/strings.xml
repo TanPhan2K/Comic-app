@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Solo Leveling</string>
 
-    <string name="client_id">244012587265-6lenqp2hd0dualkhheo66huth1p13q9v.apps.googleusercontent.com</string>
+    <string name="client_id">425810672764-2d57tagefmncd8tfku0tut637ferrn08.apps.googleusercontent.com</string>
 
-    <string name="facebook_app_id">795775572607729</string>
-    <string name="fb_login_protocol_scheme">fb795775572607729</string>
-    <string name="facebook_client_token">56789</string>
+    <string name="facebook_app_id">669115092330809</string>
+    <string name="fb_login_protocol_scheme">fb669115092330809</string>
+    <string name="facebook_client_token">6fe33855aae27d9803008478d35d6848</string>
 
     <style name="MyTextStyle">
         <item name="android:textSize">16sp</item>
