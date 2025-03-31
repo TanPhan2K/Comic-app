@@ -12,8 +12,8 @@ import java.util.Properties;
 public class EmailSender {
 
     public static void sendOTP(String recipientEmail, int otpCode ,String messageContent) {
-        final String username = "trongtruong0908@gmail.com"; // Thay bằng địa chỉ email của bạn
-        final String password = "ghoh fnet hndk heid"; // Thay bằng mật khẩu của bạn
+        final String username = "trungtin.le1505@gmail.com"; // Thay bằng địa chỉ email của bạn
+        final String password = "kfkf xzhw fdwa rdow"; // Thay bằng mật khẩu của bạn
         String subject = otpCode + " là mã xác nhận tài khoản Solo Leveling của bạn";
 
         String emailContent = "<div >"
